@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Send Info</title>
 </head>
 <body>
+		<!--The next line is problem -->
+		<form name="programmer info" action="" method="get">
+            <!--label Should be used-->	
+                <pre>
+                <h3> Personal information</h3>
+                
+                Full Name     : <input type="text" name="userName" placeholder="Write your name" autocapitalize="words" required>
+                
+                Date of Birth : <input type="date" name="dateOfBirth" required>
     
+                E-mail Address: <input type="email" name="eMail" placeholder="Write your email" required>
+    
+                Phone Number  : <input type="tel" name="phone" placeholder="+8801*********">
+                
+                Gender       :
+                    Male   <input type="radio" name="Gender" value="male" checked="checked">
+                    Female <input type="radio" name="Gender" value="female">
+                    Other  <input type="radio" name="Gender" value="others">
+                
+                Programming skills:
+                    <input type="checkbox" name="programme" value="C/C++">C/c++
+                    <input type="checkbox" name="programme" value="Python">Python
+                    <input type="checkbox" name="programme" value="Java">Java
+                    <input type="checkbox" name="programme" value="Javascript">Javascript
+                    <input type="checkbox" name="programme" value="PHP">PHP
+    
+                Country :<select name="country" required>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                </select>
+                
+                Password:<input type="password" name="password" required>	
+                
+                <textarea name="massage" placeholder="Write something about yourself..."></textarea>
+    
+                <button name="agree" >Agree</button>
+    
+                <input type="submit" value="submit">
+                </pre>
+            </form>
+    <script type="text/javascript">
+
+    </script>
 </body>
 </html>
